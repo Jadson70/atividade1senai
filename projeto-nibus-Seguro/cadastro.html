@@ -1,26 +1,70 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro do cliente</title>
 </head>
+
 <body>
     <h2>Cadastro do cliente</h2>
+
     <form action="#" method="post">
-        <p><label for="nome">Nome:</label><br>
+
+        <p>
+            <label for="nome">Nome:</label><br>
             <input type="text" id="nome" name="nome"
-            required minlength="3"></p>
-        <p><label for="email">E-mail:</label><br>
+            required minlength="3">
+        </p>
+
+        <p>
+            <label for="email">E-mail:</label><br>
             <input type="email" id="email" name="email"
-            required></p>
-        <p><label for="tel">Telefone:</label><br>
+            required>
+        </p>
+
+        <p>
+            <label for="tel">Telefone:</label><br>
             <input type="tel" id="tel" name="tel"
-                placeholder="(81) 99999-9999"></p>
-        <p><label for="nasc">Nascimento:</label><br>
-            <input type="date" id="nasc" name="nasc"></p>
-            <p><label for="idade">Idade:</label><br>
-            <button type="submit">Cadastrar</button>
+            placeholder="(81) 99999-9999">
+        </p>
+
+        <p>
+            <label for="nasc">Nascimento:</label><br>
+            <input type="date" id="nasc" name="nasc">
+        </p>
+
+        <p>
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade"
+            min="1" max="120">
+        </p>
+
+        <p>
+            <label for="tipo">Tipo de cliente:</label><br>
+            <select id="tipo" name="tipo">
+                <option value="">Selecione</option>
+                <option value="aluno">Aluno</option>
+                <option value="professor">Professor</option>
+                <option value="funcionario">Funcionário</option>
+            </select>
+        </p>
+
+        <p>Sexo:</p>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" id="feminino" name="sexo" value="feminino">
+        <label for="feminino">Feminino</label>
+
+        <p>
+            <label for="observacoes">Observações:</label><br>
+            <textarea id="observacoes" name="observacoes"></textarea>
+        </p>
+
+        <button type="submit">Cadastrar</button>
+
     </form>
 </body>
 </html>
