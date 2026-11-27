@@ -64,6 +64,23 @@
             <textarea id="observacoes" name="observacoes"></textarea>
         </p>
 
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" maxlength="9" placeholder="00000-000">
+        <button type="button" onclick="buscarCep()">Buscar</button>
+        <p id="mensagem-erro" style="color: red; font-weight: bold;"></p>
+
+        <label for="logradouro">Logradouro:</label>
+        <input type="text" id="logradouro" readonly>
+
+        <label for="bairro">Bairro:</label>
+        <input type="text" id="bairro" readonly>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" readonly>
+
+        <label for="uf">UF:</label>
+        <input type="text" id="uf" readonly>
+
         <button type="submit">Cadastrar</button>
 
     </form>
